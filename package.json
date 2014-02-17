@@ -1,0 +1,22 @@
+{
+  "name": "math-money",
+  "version": "0.1.0",
+  "description": "Floating point free Money objects and operations. Safe for math.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "money",
+    "math"
+  ],
+  "repository": "https://github.com/jsanchesleao/math-money.git",
+  "author": "jsanchesleao",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "~1.17.1"
+  }
+}
