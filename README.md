@@ -39,6 +39,12 @@ To create a custom currency, use <code>Money.factory</code> method. It accepts t
 - decimals (how many decimal places the currency supports)
 - prefix (the prefix to format the currency. Normally you should put the currency symbol)
 
+Attributes
+----------
+- intValue
+> <code>Money.Dollar(1).intValue</code>
+> Should return 100. This is because US Dollars use 2 decimal places, like US$ 1.00, so, in order to avoid floating point math, 100 is returned.
+
 Operations
 ----------
 
@@ -62,8 +68,8 @@ Money objects are immutable, so all math operations will not modify the object i
 
 Different currencies cannot interoperate. If you try to add, subtract or compare different currencies, an exception will be thrown.
 
-Convenience Methods
--------------------
+Convenience Methods and Attributes
+----------------------------------
 
 - Currency.raw
 
@@ -82,6 +88,8 @@ This generates a Money object built with a raw integer value. This value will th
     Money.BRL.ZERO; // R$ 0.00
     Money.Yen.ZERO; // ¥ 0
 ```
+
+
 
 Returns a money value representing no money.
 
